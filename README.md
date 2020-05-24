@@ -21,6 +21,8 @@ Some of the classification methods that we explored are Random forest, SVM, LTSM
 # Results
 1) LSTM: Accuracy and classification report was used to evaluate the performance of the model. The below accuracy plot shows the model executed on 50 subjects for 30 epochs. As seen in the plot there was a significant increase in the performance or accuracy of the model. For 151 subjects if we increase the number of epochs we could have achieved higher accuracy, but as the data size for each subject is large enough RAM (Random access memory) did not support the execution on all the subjects for more than 25 epochs which achieved an accuracy of 61%
 
+![](https://github.com/swayanshu/Sleep-Stage-Classification/tree/master/Images/lstm.jpg)
+
 2) SVM: Performance of the SVM model increased significantly by using ‘rbf’ (Radial basis function) over ‘linear’ kernel. Accuracy measure, classification report, and confusion matrix were used to evaluate the model performance. An accuracy of 60% was achieved by running the model on 50 subjects. With SVM accuracy is: 0.6033333333333334
 
 3) RF: Metrics evaluation and subjects used in this model were similar to SVM. An accuracy of 59% was achieved. With Random forest, accuracy is: 0.59
