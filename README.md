@@ -17,3 +17,15 @@ The source database contains 197 whole-night PolySomnoGraphic sleep recordings, 
 
 Learning Process: Sleep Data in terms of EEG → Data Preprocessing based on 30 sec Time frame→ Feature Extraction → 5 stage classification
 Some of the classification methods that we explored are Random forest, SVM, LTSM (Class of Artificial Neural network).
+
+Results
+1) LSTM: Accuracy and classification report was used to evaluate the performance of the model. The below accuracy plot shows the model executed on 50 subjects for 30 epochs. As seen in the plot there was a significant increase in the performance or accuracy of the model. For 151 subjects if we increase the number of epochs we could have achieved higher accuracy, but as the data size for each subject is large enough RAM (Random access memory) did not support the execution on all the subjects for more than 25 epochs which achieved an accuracy of 61%
+
+2) SVM: Performance of the SVM model increased significantly by using ‘rbf’ (Radial basis function) over ‘linear’ kernel. Accuracy measure, classification report, and confusion matrix were used to evaluate the model performance. An accuracy of 60% was achieved by running the model on 50 subjects. With SVM accuracy is: 0.6033333333333334
+
+3) RF: Metrics evaluation and subjects used in this model were similar to SVM. An accuracy of 59% was achieved. With Random forest, accuracy is: 0.59
+
+4) K_Means
+
+Due to inconsistent nonlinear data, the error has been increased with respect to cluster numbers.
+Our baseline/Naïve solution was implementing one of the common and simplest classification algorithms called KNN (K-nearest neighbor) with which we achieved an accuracy of less than 20%. Since the accuracy achieved was very low we implemented SVM as this model achieved better accuracy even in the paper we referred to.
